@@ -16,6 +16,7 @@ use Egulias\EmailValidator\Validation\RFCValidation;
 
 class Email extends AbstractRule
 {
+    public $emailValidator;
     public function __construct(EmailValidator $emailValidator = null)
     {
         $this->emailValidator = $emailValidator;
